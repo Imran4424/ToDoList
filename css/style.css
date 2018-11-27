@@ -47,12 +47,6 @@ h1
         border-radius: 0 0 10px 10px;
 }
 
-input[type="checkbox"]
-{
-        position: relative;
-        top: 5px;
-        float: right;
-}
 
 input[type = "checkbox"]:checked + label
 {
@@ -101,5 +95,36 @@ button {
 }
 
 button:hover {
+        color: #333;
+}
+
+/* Heading */
+h3,
+label[for='new-task'] 
+{
+        color: #333;
+        font-weight: 700;
+        font-size: 15px;
+        border-bottom: 2px solid #333;
+        padding: 30px 0 10px;
+        margin: 0;
+        text-transform: uppercase;
+}
+
+input[type="text"] 
+{
+        margin: 0;
+        font-size: 18px;
+        line-height: 18px;
+        height: 18px;
+        padding: 10px;
+        border: 1px solid #ddd;
+        background: #fff;
+        border-radius: 6px;
+        font-family: Lato, sans-serif;
+        color: #888;
+}
+
+input[type="text"]:focus {
         color: #333;
 }
