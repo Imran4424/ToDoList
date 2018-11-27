@@ -14,3 +14,12 @@ body
         background-repeat: no-repeat;
         background-attachment: fixed;
 }
+
+.wrapper
+{
+        width: 300px;
+        height: 400px;
+        margin: 100px auto;
+        border: 8px solid grey;
+        border-radius: 20px;
+}
