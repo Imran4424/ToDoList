@@ -23,7 +23,6 @@ body
         border: 8px solid grey;
         border-radius: 20px;
         background: white;
-        padding: 10px;
 }
 
 .header
@@ -31,6 +30,7 @@ body
         width: 100%;
         text-align: center;
         height: 50px;
+        padding-top: 10px;
 }
 
 h1
@@ -49,12 +49,29 @@ h1
 input[type="checkbox"]
 {
         position: relative;
-        top: 14px;
-        right: 12px;
+        top: 5px;
         float: right;
 }
 
 input[type = "checkbox"]:checked + label
 {
         text-decoration: line-through;
+        color: rgba(0, 0, 0, 0.3);
+}
+
+.list
+{
+        list-style: none;
+}
+
+.list li
+{
+        width: 100%;
+        float: left;
+}
+
+label
+{
+        padding: 10px;
+        width: 90%;
 }
