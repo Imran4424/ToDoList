@@ -22,4 +22,39 @@ body
         margin: 100px auto;
         border: 8px solid grey;
         border-radius: 20px;
+        background: white;
+        padding: 10px;
+}
+
+.header
+{
+        width: 100%;
+        text-align: center;
+        height: 50px;
+}
+
+h1
+{
+        border-bottom: dashed 2px black;
+}
+
+.list
+{
+        height: 85%;
+        width: 100%;
+
+        border-radius: 0 0 10px 10px;
+}
+
+input[type="checkbox"]
+{
+        position: relative;
+        top: 14px;
+        right: 12px;
+        float: right;
+}
+
+input[type = "checkbox"]:checked + label
+{
+        text-decoration: line-through;
 }
