@@ -40,14 +40,6 @@ h1
         border-bottom: dashed 2px black;
 }
 
-
-input[type = "checkbox"]:checked + label
-{
-        text-decoration: line-through;
-        color: rgba(0, 0, 0, 0.3);
-}
-
-
 .list li
 {
         width: 100%;
@@ -76,7 +68,8 @@ input, button
         outline: none;
 }
 
-button {
+button 
+{
         background: none;
         border: 0px;
         color: #888;
@@ -88,13 +81,13 @@ button {
         float: right;
 }
 
-button:hover {
-        color: #333;
+button:hover 
+{
+        color:red;
 }
 
 /* Heading */
-h3,
-label[for='new-task'] 
+h3
 {
         color: #333;
         font-weight: 700;
@@ -148,7 +141,7 @@ li>input[type="checkbox"]
 {
         margin: 0 10px;
         position: relative;
-        top: 15px;
+        top: 3px;
 }
 
 li>label 
@@ -171,7 +164,8 @@ li>.delete:hover
 
 
 /* Completed */
-#completed-tasks label {
+#completed-tasks label 
+{
         text-decoration: line-through;
         color: #888;
 }
