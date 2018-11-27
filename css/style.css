@@ -13,12 +13,13 @@ body
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
+        font-family: Lato, sans-serif;
 }
 
 .wrapper
 {
         width: 600px;
-        height: 800px;
+        height: 3000px;
         margin: 100px auto;
         border: 8px solid grey;
         border-radius: 20px;
@@ -37,14 +38,6 @@ body
 h1
 {
         border-bottom: dashed 2px black;
-}
-
-.list
-{
-        height: 85%;
-        width: 100%;
-
-        border-radius: 0 0 10px 10px;
 }
 
 
@@ -92,6 +85,7 @@ button {
         margin: 10px 0 0;
         font-family: Lato, sans-serif;
         cursor: pointer;
+        float: right;
 }
 
 button:hover {
@@ -131,10 +125,6 @@ input[type="text"]:focus {
 
 
 /* New Task */
-label[for='new-task'] {
-        display: block;
-        margin: 0 0 20px;
-}
 
 input#new-task {
         float: left;
@@ -143,4 +133,58 @@ input#new-task {
 
 p>button:hover {
         color: #0FC57C;
+}
+
+
+/* Task list */
+li 
+{
+        overflow: hidden;
+        padding: 20px 0;
+        border-bottom: 1px solid #eee;
+}
+
+li>input[type="checkbox"] 
+{
+        margin: 0 10px;
+        position: relative;
+        top: 15px;
+}
+
+li>label 
+{
+        font-size: 18px;
+        line-height: 40px;
+        width: 237px;
+        padding: 0 0 0 11px;
+}
+
+li>input[type="text"] 
+{
+        width: 226px;
+}
+
+li>.delete:hover 
+{
+        color: #CF2323;
+}
+
+
+/* Completed */
+#completed-tasks label {
+        text-decoration: line-through;
+        color: #888;
+}
+
+/* Edit Task */
+ul li input[type=text] {
+        display: none;
+}
+
+ul li.editMode input[type=text] {
+        display: block;
+}
+
+ul li.editMode label {
+        display: none;
 }
