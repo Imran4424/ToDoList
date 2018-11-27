@@ -40,6 +40,14 @@ h1
         border-bottom: dashed 2px black;
 }
 
+
+input[type = "checkbox"]:checked + label
+{
+        text-decoration: line-through;
+        color: rgba(0, 0, 0, 0.3);
+}
+
+
 .list li
 {
         width: 100%;
@@ -164,11 +172,11 @@ li>.delete:hover
 
 
 /* Completed */
-#completed-tasks label 
+/* #completed-tasks label 
 {
         text-decoration: line-through;
         color: #888;
-}
+} */
 
 /* Edit Task */
 ul li input[type=text] {
