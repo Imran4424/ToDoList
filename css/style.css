@@ -17,8 +17,8 @@ body
 
 .wrapper
 {
-        width: 300px;
-        height: 400px;
+        width: 600px;
+        height: 600px;
         margin: 100px auto;
         border: 8px solid grey;
         border-radius: 20px;
@@ -69,6 +69,12 @@ input[type = "checkbox"]:checked + label
 {
         width: 100%;
         float: left;
+        height: 8%;
+}
+
+.list li:hover
+{
+        background-color: darkgreen;        
 }
 
 label
